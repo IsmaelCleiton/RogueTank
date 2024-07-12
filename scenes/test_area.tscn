@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://7tiruhn5fdb"]
+
+[ext_resource type="PackedScene" uid="uid://deljn8wav3mcv" path="res://scenes/tank.tscn" id="1_dpvvd"]
+
+[node name="test_area" type="Node2D"]
+
+[node name="tank" parent="." instance=ExtResource("1_dpvvd")]
+position = Vector2(208, 120)

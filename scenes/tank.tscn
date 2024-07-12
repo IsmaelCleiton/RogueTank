@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://deljn8wav3mcv"]
+
+[ext_resource type="Texture2D" uid="uid://deaui4u5bdxy" path="res://sprites/tank_green.png" id="1_5dogc"]
+[ext_resource type="Script" path="res://scripts/tank.gd" id="1_gqqa3"]
+
+[node name="tank" type="CharacterBody2D"]
+script = ExtResource("1_gqqa3")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2(-331, -90)
+polygon = PackedVector2Array(325, 113, 337, 113, 337, 107, 345, 107, 352, 102, 352, 73, 345, 67, 317, 67, 310, 72, 310, 102, 317, 107, 325, 107)
+
+[node name="TankGreen" type="Sprite2D" parent="."]
+texture = ExtResource("1_5dogc")
